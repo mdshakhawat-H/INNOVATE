@@ -1,0 +1,121 @@
+@import '../mixins/mixins';
+#team{
+    background-color: #353A55;
+    padding: 80px 0 0 0;
+    height: 350px;
+    .team_head{
+        text-align: center;
+        h4{
+           @include forth_head;
+        }
+        h2{
+            @include heading($clr: $secondery_color , $fs: 48px);
+        }
+    }
+    .expert{
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+        .expert_items{
+            position: relative;
+            .expert_bg{
+                img{
+                    width: 100%;
+                }
+            }
+            .expert_icons{
+                position: absolute;
+                bottom: 5%;
+                right: 3%;
+                ol{
+                    transition: all linear .4s;
+                    li{
+                        position: relative;
+                        a{
+                            color: $third-color;
+                            padding: 10px 15px;
+                            background-color: $secondery_color;
+                            border-radius: 50%;
+                            transition: .4s;
+                            &:hover{
+                                background-color: #52c5b6;
+                                color: $secondery_color;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    &:hover{
+                        ul{
+                            visibility: visible;
+                            li{
+                                a{
+                                    &:hover{
+                                        transform: rotate(0deg);
+                                    }
+                                }
+                            }
+                        }
+                        .expert_name{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            li{
+                                display: flex;
+                                ul{
+
+                                }
+                            }
+                        }
+                    }
+                   }
+                   ul{
+                    position: absolute;
+                    top: -419%;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    visibility: hidden;
+                    gap: 20px;
+                   }
+                }
+            }
+            .expert_name{
+                position: absolute;
+                bottom: -5%;
+                left: 0;
+                background-color: $secondery_color;
+                padding: 22px 46px 22px 50px;
+                border-top-right-radius: 10px;
+                &:hover{
+                    background-color: #52c5b6;
+                    h3 {
+                        color: $secondery_color;
+                        &::after{
+                            background-color: $secondery_color;
+                        }
+                    }
+                    p{
+                        color: $secondery_color;
+                    }
+                }
+                h3{
+                    @include forth_head($clr: $primary_color ,$fs: 15px , $tt: capitalize );
+                    margin: 0;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        width: 20px;
+                        height: 2px;
+                        background-color: #52c5b6;
+                        position: absolute;
+                        top: 47%;
+                        left: -29%;
+                    }
+                }
+                p{
+                    @include description ($clr: $primary_color , $sf: 12px , $lh: 15px );
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

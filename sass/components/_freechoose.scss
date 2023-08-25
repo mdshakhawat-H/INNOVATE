@@ -1,0 +1,55 @@
+@import '../mixins/freemix';
+#choose{
+    background-color: #fdfdfd;
+    padding: 100px 0;
+    .choose_reason{
+        ul{
+            li{
+                display: flex;
+                gap: 30px;
+                padding: 42px 140px 42px 30px;
+                border-radius: 20px;
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+                div{
+                    position: relative;
+                    i{
+                        color: $secondery_colors;
+                    }
+                    .ml{
+                        position: absolute;
+                        top: 7%;
+                        left: 40%;
+                        color: #CBC8F0;
+                    }
+                    p{
+                        @include descriptions($clr: $forth_colors , $fs: 16px,);
+                    }
+                }
+            }
+        }
+    }
+    .choose_head{
+        h2{
+            @include head($clr: $primary_colors , $fs: 48px,);
+            text-transform: capitalize;
+        }
+        p{
+            @include descriptions($clr: $forth_colors , $fs: 16px,);
+            width: 70%;
+            padding: 24px 0 56px;
+        }
+        .choose_btn{
+            a{
+                @include descriptions($clr: $third_colors , $fs: 20px, $fw: 700);
+                text-transform: capitalize;
+                padding: 15px 30px;
+                border-radius: 100px;
+                background-color: $secondery_colors;
+
+            }
+        }
+    }
+}

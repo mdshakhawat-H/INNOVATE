@@ -1,0 +1,84 @@
+@import '../mixins/mixins';
+#reliable{
+    padding: 120px 0;
+    .reliable_txt{
+        h2{
+            @include heading
+        }
+        p{
+            @include description;
+            width: 90%;
+            padding: 20px 0 40px;
+        }
+        .reliable_button{
+            a{
+                @include description;
+                text-transform: capitalize;
+                padding: 15px 30px;
+                background-color: $brand_color;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+        .solutions{
+            margin-top: 50px;
+            display: flex;
+            gap: 70px;
+            .solution_items{
+                h3{
+                    @include heading($clr: $primary_color , $fs: 20px)
+                }
+                p{
+                    @include description ($clr: $primary_color , $sf: 13px , $lh: 25px );
+                }
+            }
+        }
+    }
+    .reliable_pic{
+        position: relative;
+        .LineElement{
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            width: 25%;
+        }
+        img{
+            width: 90%;
+            margin-left: 50px;
+        }
+        .reliable_counter{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            background-color: #52C5B6;
+            width: max-content;
+            padding-left: 20px;
+            width: 48%;
+            position: absolute;
+            top: 81%;
+            left: 30%;
+            div{
+                h3{
+                    @include forth_head($clr: #fff ,$fs: 50px , $tt: capitalize );
+                    margin-top: 10px;
+                }
+                h4{
+                    @include forth_head($clr: #fff ,$fs: 20px , $tt: capitalize );
+                    margin: 0px;
+                    
+                }
+            }
+            .underline{
+                &::after{
+                    content: '';
+                    width: 85px;
+                    height: 2px;
+                    position: absolute;
+                    top: 40%;
+                    left: 60%;
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+}

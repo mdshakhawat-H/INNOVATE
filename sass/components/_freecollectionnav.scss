@@ -1,0 +1,41 @@
+@import '../mixins/freemix';
+.navbar{
+    background-color: #483f9c7c !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .main_nav{
+        justify-content: space-between;
+        ul{
+            gap: 43px;
+            li{
+                a{
+                    @include descriptions($clr: $third_colors , $fs: 18px,);
+                    text-transform: capitalize;
+                }
+                .nav-link.show {
+                    color: $secondery_colors;
+                }
+                ul{
+                    li{
+                        a{
+                            @include descriptions($clr: $forth_colors , $fs: 18px,);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .nav_btn{
+            a{
+                @include descriptions($clr: $third_colors , $fs: 18px,);
+                text-transform: capitalize;
+                padding: 10px 20px;
+                background-color: $secondery_colors;
+                border-radius: 100px;
+
+            }
+        }
+    }
+}

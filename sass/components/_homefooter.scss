@@ -1,0 +1,87 @@
+@import '../mixins/mixins';
+#footer{
+    padding: 110px 0 20px;
+    background-color: $primary_color;
+    .foot_logo_txt{
+        padding: 25px 0;
+        p{
+            @include description ($clr: $secondery_color , $sf: 17px , $lh: 32px );
+            width: 70%;
+        }
+    }
+    .foot_contact_icon{
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+                a{
+                    padding: 10px 15px;
+                    background-color: $secondery_color;
+                    border-radius: 50%;
+                    color: $primary_color;
+                }
+            }
+        }
+    }
+    .foot_head{
+        padding-bottom: 20px;
+        h4{
+            @include description ($clr: #52C5B6 , $sf: 17px , $lh: 32px );
+        }
+    }
+    .fooot_list {
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            li{
+                a{
+                    @include description ($clr: $secondery_color , $sf: 17px , $lh: 32px );
+                }
+            }
+        }
+        p{
+            @include description ($clr: $secondery_color , $sf: 9px , $lh: 20px );
+            
+        }
+    }
+    .foot_form{
+        form{
+            display: flex;
+            position: relative;
+            width: 100%;
+            input{
+                padding: 10px;
+                width: 100%;
+                &::placeholder{
+                    font-size: 12px;
+                    color: #A1A2A3 ;
+                }
+            }
+            button{
+                background: none;
+                border: none;
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                i{
+                    padding: 10px;
+                    color: $secondery_color;
+                    background-color: $brand_color;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top: 60px;
+        border-top: 3px solid #D2D2D2;
+        p{
+            @include description ($clr: $secondery_color , $sf: 17px , $lh: 32px );
+            padding-top: 30px;
+            a{
+                color: $secondery_color;
+            }
+        }
+    }
+}

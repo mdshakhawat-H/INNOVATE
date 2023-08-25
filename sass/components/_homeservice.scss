@@ -1,0 +1,158 @@
+@import '../mixins/mixins';
+#service{
+    padding: 120px 0;
+    background-color: #fafafa;
+    position: relative;
+    .service_txt{
+        display: flex;
+        .text_left{
+            h4{
+              @include forth_head;
+            }
+            h2{
+                @include heading ($clr: $primary_color , $fs: 48px);
+                width: 80%;
+                line-height: 62px;
+            }
+        }
+    }
+    .text_right{
+        p{
+            @include description;
+            margin-left: 20%;
+        }
+    }
+    .SE_slider{
+        margin-top: 50px;
+        .slick-slide{
+            margin: 0 12px;
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+           li{
+             button{
+                font-size: 0px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #DBDBDB;
+                border: 3px solid transparent;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid #F44C4C;
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    visibility: hidden;
+                }
+             }
+           }
+           .slick-active{
+            button{
+                background-color: #F44C4C;
+                &::after{
+                    visibility: visible;
+                }
+            }
+           }
+        }
+        .SE_slid_item{
+            background: #fff;
+            width: 25%;
+            padding: 40px 20px;
+            margin: 0 20px 50px  20px;
+            .SE_slidpic{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                .picsign{
+                    position: absolute;
+                    top: 15%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    img{
+                        background-color: #F44C4C;
+                        padding: 15px;
+                        border-radius: 50%;
+                    }
+                }
+                .circle {
+                    border: 2px solid #F44C4C;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    animation: rotateCircles 2.1s linear infinite;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        background: #F44C4C;
+                        top: -6px;
+                        border-radius: 50%;                      
+                    }
+                }
+                  @keyframes rotateCircles {
+                    from {
+                      transform: rotate(0);
+                    } to {
+                      transform: rotate(360deg);
+                    }
+                  }
+            }
+            h2{
+                @include heading ($clr: $primary_color , $fs: 24px);
+                text-align: center;
+                padding-top: 20px;
+            }
+            p{
+                @include description ($clr: $primary_color , $sf: 12px , $lh: 26px );
+                text-align: center;
+                margin-top: 14px;
+            }
+        }
+    }
+    .slik_prev_arrow{
+      position: absolute;
+      top: 751px;
+      left: 42%;
+      &:hover{
+        i{
+            color: $secondery_color;
+            background-color: $brand_color;
+        }
+      }
+      i{
+        padding: 10px;
+        border-radius: 50%;
+        color: #DBDBDB;
+        border: 1px solid #DBDBDB;
+      }
+    }
+    .slik_next_arrow{
+      position: absolute;
+      top: 751px;
+      left: 57%;
+      &:hover{
+        i{
+            color: $secondery_color;
+            background-color: $brand_color;
+        }
+      }
+      i{
+        padding: 10px;
+        border-radius: 50%;
+        color: #DBDBDB;
+        border: 1px solid #DBDBDB;
+      }
+    }
+}

@@ -1,0 +1,46 @@
+@import '../mixins/freemix';
+#freeplan{
+    padding: 100px 0;
+    background-color: #f9f9fb;
+    .plan_head{
+        h2{
+            @include  head($clr: $primary_colors , $fs: 48px,);
+            text-align: center;
+        }
+    }
+    .plans{
+        padding-top: 65px;
+        display: flex;
+        gap: 30px;
+        .plan_item{
+            border-radius: 20px;
+            background-color: white;
+            width: 33.333%;
+            text-align: center;
+            padding: 60px 0;
+            &:hover{
+                background-color: #8981d1;
+                h3{
+                    color: $third_colors;
+                }
+                p{
+                    color: $third_colors;
+                }
+            }
+            h3{
+                @include  head($clr: $primary_colors , $fs: 30px,);
+                
+            }
+            img{
+                width: 100%;
+            }
+            span{
+                @include  head($clr: $secondery_colors , $fs: 25px,);
+            }
+            p{
+                @include descriptions($clr: $forth_colors , $fs: 22px, $fw: 500);
+                margin: 20px 50px 0;
+            }
+        }
+    }
+}

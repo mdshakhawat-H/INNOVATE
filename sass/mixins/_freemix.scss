@@ -1,0 +1,15 @@
+@import '../variables/freecollectionvariable';
+@mixin head($clr: $primary_colors , $fs: 48px,){
+     font-family: $primary_fontS;
+     font-weight: 700;
+     font-size: $fs;
+     color: $clr;
+}
+@mixin descriptions($clr: $third_colors , $fs: 24px, $fw: 500){
+    font-family: $primary_fontS;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $clr;
+
+
+}

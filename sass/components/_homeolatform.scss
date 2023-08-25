@@ -1,0 +1,71 @@
+@import '../mixins/mixins';
+#platform{
+    padding: 300px 0 100px;
+    .plat_img{
+        position: relative;
+        img{
+            width: 70%;
+        }
+        .plat_inbx{
+            position: absolute;
+            top: 27%;
+            left: 5%;
+            width: max-content;
+            i{
+                font-size: 25px;
+                padding: 15px;
+                color: $secondery_color;
+                background-color: #FD5F36;
+                border-radius: 12px;
+            }
+        }
+    }
+    .plat_txt{
+        .plat_head{
+            margin-top: 50px;
+            h2{
+                @include heading($clr: $primary_color , $fs: 45px);
+                line-height: 62px;
+            }
+        }
+        .folding{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .accordion-item{
+                border-top: 1px solid #52c5b6;
+                .accordion-header{
+                    .accordion-button{
+                        @include forth_head($clr: $primary_color ,$fs: 20px , $tt: capitalize );
+                        &::after{
+                             content: '+';
+                             background-image: none;
+                        }
+                    }
+                    .accordion-button:not(.collapsed)::after{
+                        transform: rotate(45deg);
+                    }
+                    .accordion-button:not(.collapsed){
+                        background-color: #52c5b6;
+                        &:focus{
+                            border: none;
+                        }
+                    }
+                }
+                .accordion-collapse{
+                    .accordion-body{
+                        p{
+                            @include description;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.accordion{
+    --bs-accordion-border-color: #52c5b6;
+    --bs-accordion-btn-focus-box-shadow: none;
+}

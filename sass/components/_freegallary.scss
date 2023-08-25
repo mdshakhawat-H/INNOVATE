@@ -1,0 +1,34 @@
+@import '../mixins/freemix';
+#gallary{
+    background-color: #F9F9FB;
+    padding-bottom: 50px;
+    .gallary_img{
+        position: relative;
+        .main_gallary{
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            top: -75px;
+            left: 0;
+        }
+    }
+    .gallary_counter{
+        margin-top: 560px;
+        display: flex;
+        justify-content: space-between;
+        .gallary_citem{
+            text-align: center;
+            h2{
+                @include head($clr: $secondery_colors , $fs: 48px,);
+            }
+            p{
+                @include descriptions($clr: $primary_colors , $fs: 24px,);
+                text-transform: capitalize;
+            }
+        }
+        .citem_bdr{
+            border-right: 2px solid rgba(128, 128, 128, 0.712);
+            padding-right: 80px;
+        }
+    }
+}

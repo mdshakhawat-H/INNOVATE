@@ -1,0 +1,62 @@
+@import '../mixins/freemix';
+#freeservices{
+    padding: 100px 0;
+    background-color: #f6f5ff;
+    .serv_descriptions{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        .freeservitems{
+            h2{
+                @include head($clr: $primary_colors , $fs: 48px,);
+                text-transform: capitalize;
+            }
+            p{
+                @include descriptions($clr: $forth_colors , $fs: 20px, $fw: 500);
+                padding: 20px 0;
+            }
+            .choose_btn{
+                a{
+                    @include descriptions($clr: $third_colors , $fs: 20px, $fw: 700);
+                    text-transform: capitalize;
+                    padding: 15px 30px;
+                    border-radius: 100px;
+                    background-color: $secondery_colors;
+    
+                }
+            }
+        }
+        .freeservitem{
+            padding: 50px;
+            border-radius: 20px;
+            background-color: $third_colors;
+            text-align: center;
+            &:hover{
+                background-color: #6b62c5;
+                h2{
+                    color: $third_colors;
+                }
+                p{
+                    color: $third_colors;
+                }
+                a{
+                    color: $third_colors;
+                }
+            }
+            h2{
+                @include head($clr: $primary_colors , $fs: 30px,);
+                padding-top: 30px;
+                width: max-content;
+                text-transform: capitalize;
+            }
+            p{
+                @include descriptions($clr: $forth_colors , $fs: 17px, $fw: 400);
+                padding: 20px 0;
+            }
+           a{
+               @include descriptions($clr: $forth_colors , $fs: 20px, $fw: 700);
+               text-transform: capitalize;
+           }
+        }
+    }
+}

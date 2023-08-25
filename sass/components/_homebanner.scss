@@ -1,0 +1,182 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+#banner{
+    background: $primary_color;
+    padding: 50px;
+    position: relative;
+    .bg_right{
+        width: 42%;
+        height: 100%;
+        background-color: #52C5B6;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+    .shap{
+        position: absolute;
+        top: 5%;
+        left: 0;
+    }
+    .container{
+        .col-lg-7{
+            position: relative;
+            .LineElement{
+                position: absolute;
+                bottom: 10%;
+                right: 0;
+
+            }
+            span{
+                position: absolute;
+                bottom: -4%;
+                right: 0;
+                a{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                    background-color: gray;
+                    opacity: 50%;
+                    text-align: center;
+                    line-height: 100px;
+                    i{
+                        font-size: 20px;
+                        padding: 15px 20px;
+                        background-color: white;
+                        color: $primary_color;
+                        border-radius: 50%;
+
+                    }
+                }
+            }
+           .banner_txt{
+              h1{
+                @include heading ($clr: $secondery_color , $fs: 60px ,);
+                padding-top: 130px;
+              }
+              p{
+                font-family: $primary_font;
+                font-weight: 400;
+                font-size: 18px;
+                color: $secondery_color;
+                padding: 24px 0 0 0;
+                width: 80%;
+              }
+              .common_button{
+                 padding: 40px 0 0 0;
+                a{
+                font-family: $secondery_font;
+                font-weight: 500;
+                font-size: 18px;
+                padding: 15px 30px;
+                border-radius: 10px;
+                background-color: $secondery_color;
+                color: $primary_color;
+                transition: .4s;
+                &:hover{
+                    background-color: $brand_color;
+                    color: $secondery_color;
+                 }
+                }
+              }
+           }
+           .banner_signin{
+              img{
+                  margin-left: 57%;
+              }
+              p{
+                font-family: $primary_font;
+                font-weight: 500;
+                font-size: 20px;
+                color: $secondery_color;
+                a{
+                    color: #52C5B6;
+                }
+              }
+           }
+           .banneer_review{
+            display: flex;
+            padding-top: 70px;
+            .profile{
+                ul{
+                    display: flex;
+                    li{
+                        margin-left: -5%;
+                        a{
+                          width: 40px;
+                          height: 40px;
+                          border-radius: 50%;
+                          background-color: #c4c4c4;
+                          color: #c4c4c4;
+                          border: 1.5px solid white;
+                        }
+                    }
+                }
+            }
+            .review_description{
+                width: 100%;
+                .rev_icon{
+                    display: flex;
+                    gap: 20px;
+                    h2{
+                        font-family: $primary_font;
+                        font-weight: 700;
+                        font-size: 26px;
+                        color: #52C5B6; 
+                        padding-right: 15px;
+                        border-right: 1px solid gray;
+                    }
+                    ul{
+                        padding: 0;
+                        display: flex;
+                        gap: 7px;
+                        li{
+                            a{
+                                i{
+                                    color: #FDB400;
+                                }
+                            }
+                        }
+                    }
+                }
+                p{
+                    font-family: $primary_font;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $secondery_color;
+                    padding: 0;
+                }
+            }
+           }
+        }
+        .col-lg-5{
+            position: relative;
+            .BN_items{
+                .bannerCouple{
+                    width: 450px;
+                    height: 800px;
+                    position: absolute;
+                    bottom: -6%;
+                    left: 10%;
+                    z-index: 1;
+                }
+                .Pattern{
+                    position: absolute;
+                    top: -6%;
+                    left: 68%;
+                }
+                .Ellipse2{
+                    width: 400px;
+                    position: absolute;
+                    top: -6%;
+                    right: -13%;
+                }
+                .Ellipse3{
+                    position: absolute;
+                    bottom: -7%;
+                    right: -13%;
+                }
+            }
+        }
+    }
+}

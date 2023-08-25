@@ -1,0 +1,49 @@
+@import '../variables/variables';
+nav{     
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    .container{
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                gap: 50px;
+                list-style: none;
+                li{
+                    a{
+                        font-family: $primary_font;
+                        font-weight: 400;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        color: $secondery_color;
+                    }
+                }
+            }
+            .menu_button{
+                display: flex;
+                div{
+                    a{
+                        font-family: $secondery_font;
+                        font-weight: 500;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        padding: 15px 30px;
+                        border-radius: 10px;
+                        color: white;
+                        transition: .4s;
+                        &:hover{
+                            background-color: white;
+                            color: #30344E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

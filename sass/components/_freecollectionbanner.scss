@@ -1,0 +1,46 @@
+@import '../mixins/freemix';
+#free_banner{
+    position: relative;
+    background: none;
+    padding: 240px 0 0 0;
+    z-index: 1;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 900px;
+        z-index: -1;
+    }
+    .banner_txt{
+        h1{
+            @include head($clr: $third_colors , $fs: 84px,);
+            text-align: center;
+        }
+        p{
+            @include descriptions($clr: $third_colors , $fs: 24px,);
+            width: 65%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 40px 0;
+            line-height: 40px;
+        }
+        .free_banner_btn{
+            padding-bottom: 185px;
+            width: max-content;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            a{
+                @include descriptions($clr: $third_colors , $fs: 24px,);
+                text-transform: capitalize;
+                padding: 10px 20px;
+                border: 2px solid $secondery_colors;
+                border-radius: 100px;
+                &:hover{
+                    background-color: $secondery_colors;
+                }
+            }
+        }
+    }
+}

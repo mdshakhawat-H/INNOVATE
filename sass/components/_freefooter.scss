@@ -1,0 +1,52 @@
+@import '../mixins/freemix';
+#freefooter{
+    padding: 140px 0 60px;
+    background: #48409C;
+    .footlogotxt{
+        p{
+            @include  descriptions($clr: #d5cbcb , $fs: 14px, $fw: 500);
+            padding-top: 45px;
+        }
+    }
+    .freefoot_head{
+        h2{
+            @include head($clr: $third_colors , $fs: 24px,);
+        }
+    }
+    .freefoot_list{
+        margin-top: 50px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li{
+                a{
+                    @include  descriptions($clr: #d5cbcb , $fs: 18px, $fw: 500);
+
+                }
+            }
+        }
+    }
+    .free_copyright{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        .free_CR{
+            p{
+                @include  descriptions($clr: #d5cbcb , $fs: 18px, $fw: 500);
+            }
+        }
+        .privacy_terms{
+            display: flex;
+            justify-content: flex-end;
+            gap: 60px;
+            div{
+                p{
+                   a{
+                    @include  descriptions($clr: #d5cbcb , $fs: 18px, $fw: 500); 
+                   }
+                }
+            }
+        }
+    }
+}

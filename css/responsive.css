@@ -1,0 +1,454 @@
+/* =============== INDEX PAGE START ============= */
+@media (min-width: 575.98px)and (max-width: 767.98px) { 
+    nav {
+        padding: 10px 0;
+    }
+    .logo img{
+        width: 40px;
+    }
+    nav .container .main ul {
+        gap: 7px;
+    }
+    nav .container .main ul li a {
+        font-size: 10px;
+    }
+    nav .container .main .menu_button div a {
+        font-size: 10px;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+    #banner {
+        padding: 50px 0 0;
+    }
+    #banner .container .col-lg-7 .banner_txt h1 {
+        font-size: 20px;
+        width: 59%;
+        padding-top: 35px;
+    }
+    #banner .container .col-lg-5 .BN_items .bannerCouple {
+        width: 162px;
+        height: 291px;
+        left: 58%;
+    }
+    #banner .container .col-lg-5 .BN_items .Ellipse2 {
+        width: 400px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        visibility: hidden;
+    }
+    #banner .container .col-lg-5 .BN_items .Ellipse3 {
+        position: absolute;
+        bottom: -7%;
+        right: 1%;
+    }
+    #banner .container .col-lg-7 .banner_txt p {
+        font-size: 10px;
+        padding: 10px 0 0 0;
+        width: 57%;
+    }
+    #banner .container .col-lg-7 .banner_txt .common_button {
+        padding: 0px 0 0 0;
+    }
+    #banner .container .col-lg-7 .banner_txt .common_button a {
+        font-size: 10px;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    #banner .container .col-lg-7 .banner_signin img {
+        margin-left: 45%;
+        width: 6%;
+    }
+    #banner .container .col-lg-7 .banneer_review {
+        padding-top: 0px;
+    }
+    #banner .container .col-lg-7 .banneer_review .profile ul li a {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    #banner .container .col-lg-7 .banneer_review .review_description .rev_icon h2 {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    #banner .container .col-lg-7 .banneer_review .review_description .rev_icon ul {
+        gap: 2px;
+    }
+    #banner .container .col-lg-7 .banneer_review .review_description .rev_icon ul li a i {
+        font-size: 10px;
+    }
+    #banner .container .col-lg-7 .banneer_review .review_description p {
+        font-size: 10px;
+    }
+    .Ellipse2 , #banner .container .col-lg-7 span a {
+        visibility: hidden;
+    }
+    #banner .container .col-lg-5 .BN_items .Pattern {
+        left: 46%;
+    }
+    #about {
+        padding: 50px 0;
+    }
+    #about .about_txt h4 {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    #about .about_txt h2 {
+        font-size: 20px;
+        line-height: 26px;
+        width: 70%;
+    }
+    #about .about_txt p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #about .about_txt ul li p {
+        font-size: 10px;
+        line-height: 0px;
+    }
+    #about .about_txt ul li i {
+        font-size: 8px;
+    }
+    #about .about_txt .about_button a {
+        font-size: 10px;
+        padding: 8px 15px;
+    }
+    #about .about_txt .about_button {
+        padding-top: 20px;
+    }
+    #service {
+        padding: 50px 0;
+    }
+    #service .service_txt {
+        display: block;
+    }
+    #service .service_txt .text_left h4 {
+        font-size: 15px;
+    }
+    #service .service_txt .text_left h2 {
+        font-size: 20px;
+        width: 100%;
+        line-height: 25px;
+    }
+    #service .text_right p {
+        font-size: 10px;
+        line-height: 16px;
+        margin-left: 0%;
+    }
+    #service .SE_slider .SE_slid_item h2 {
+        font-size: 18px;
+    }
+    #service .SE_slider .SE_slid_item p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #service .slik_prev_arrow {
+	top: 88%;
+	left: 24%;
+}
+#service .slik_next_arrow {
+	top: 88%;
+	left: 67%;
+}
+#service .slik_next_arrow i {
+	padding: 5px;
+	font-size: 10px;
+}
+#service .slik_prev_arrow i {
+	padding: 5px;
+	font-size: 10px;
+}
+#reliable .reliable_txt h2 {
+	font-size: 20px;
+}
+#reliable {
+	padding: 50px 0;
+}
+#reliable .reliable_txt p {
+	font-size: 10px;
+	line-height: 18px;
+	width: 90%;
+	padding: 8px 0 12px;
+}
+#reliable .reliable_txt .reliable_button a {
+	font-size: 10px;
+	line-height: 32px;
+	padding: 6px 23px;
+}
+#reliable .reliable_txt .solutions {
+	margin-top: 40px;
+	display: block;
+}
+#reliable .reliable_txt .solutions .solution_items p {
+	font-size: 10px;
+	line-height: 18px;
+}
+#reliable .reliable_txt .solutions .solution_items h3 {
+	font-size: 15px;
+}
+#reliable .reliable_pic img {
+	margin-left: 38px;
+}
+#reliable .reliable_pic .reliable_counter .underline::after {
+	top: 49%;
+	left: 52%;
+}
+#team .team_head h4 {
+	font-size: 15px;
+}
+#team .team_head h2 {
+	font-size: 20px;
+}
+#team {
+	padding: 40px 0 0 0;
+	height: 100%;
+}
+#team .expert {
+    display: block;
+}
+#team .expert .expert_items {
+    margin-bottom: 30px;
+}
+#team .expert .expert_items .expert_name {
+	bottom: 0%;
+}
+#platform {
+	padding: 40px 0;
+}
+#platform .plat_txt .plat_head {
+	margin-top: 30px;
+}
+#platform .plat_txt .plat_head h2 {
+	font-size: 20px;
+	line-height: 0px;
+}
+#platform .plat_txt .folding .accordion-item .accordion-header .accordion-button {
+	font-size: 15px;
+}
+#platform .plat_txt .folding .accordion-item .accordion-collapse .accordion-body p {
+	font-size: 10px;
+	line-height: 20px;
+}
+#companies {
+	padding: 50px 0;
+}
+#companies .compani_head h2 {
+	font-size: 20px;
+}
+#companies .compani_head .conpani_btn {
+	margin-top: 20px;
+}
+#companies .compani_head .conpani_btn a {
+	font-size: 10px;
+	padding: 2px 19px;
+}
+.compani_items{
+    margin-top: 30px;
+}
+#companies .compani_items .compani_counter .com_counter_items h3 {
+	font-size: 20px;
+}
+#companies .compani_items .compani_counter .com_counter_items p {
+	font-size: 10px;
+	line-height: 10px;
+}
+#companies .comElement2 {
+	width: 44%;
+}
+.comElement1{
+    width: 20%;
+}
+#testimonial {
+	padding: 50px 0;
+}
+#testimonial .test_txt h2 {
+	font-size: 20px;
+	line-height: 25px;
+}
+#testimonial .test_slid .test_slid_item .item_description {
+	padding: 20px ;
+}
+#testimonial .test_slid .test_slid_item .item_description p {
+	font-size: 10px;
+	line-height: 15px;
+}
+#testimonial .test_slid .test_slid_item .item_description .test_profile .pro_pic a {
+	font-size: 20px;
+}
+#testimonial .test_slid .test_slid_item .item_description .test_profile .pro_name .profile_name h3 {
+	font-size: 10px;
+}
+#testimonial .test_slid .test_slid_item .item_description .test_profile .pro_name .profile_name p {
+	font-size: 10px;
+	line-height: 0px;
+}
+#testimonial .test_slid .test_slid_item .item_description .test_profile .pro_name .profile_rating ul li a {
+	font-size: 10px;
+}
+#testimonial .test_slid .test_slid_item .item_description .test_profile .pro_name .profile_rating ul {
+	bottom: 11px;
+	right: -218px;
+}
+#testimonial .test_next {
+	bottom: 9%;
+	right: 40%;
+}
+#testimonial .test_prev {
+	bottom: 9%;
+	left: 38%;
+    z-index: 1;
+}
+#testimonial .test_prev span i , #testimonial .test_next span i{
+	font-size: 10px;
+	padding: 4px;
+	border: 1px solid #c6bfbf;
+}
+#updates {
+	padding: 50px 0;
+}
+#updates .update_head h4 {
+	font-size: 15px;
+}
+#updates .update_head h2 {
+	font-size: 20px;
+}
+#updates .updated {
+	margin-top: 20px;
+	display: block;
+}
+#updates .updated .updated_items {
+	width: 100%;
+    margin-bottom: 20px;
+}
+#footer {
+	padding: 40px 0 20px;
+}
+.footer_Logo img{
+    width: 50px;
+}
+#footer .foot_logo_txt p {
+	font-size: 10px;
+	line-height: 16px;
+	width: 100%;
+}
+#footer .foot_contact_icon ul li a {
+	padding: 2px 4px;
+	font-size: 10px;
+}
+#footer .foot_head h4 {
+	font-size: 10px;
+}
+#footer .fooot_list ul li a {
+	font-size: 7px;
+	line-height: 32px;
+}
+#footer .fooot_list ul {
+	gap: 0px;
+}
+#footer .fooot_list p {
+	font-size: 6px;
+	line-height: 8px;
+}
+#footer .foot_form form {
+	display: block;
+}
+#footer .foot_form form button {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+}
+#footer .foot_form form input {
+	padding: 0px;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .logo img{
+        width: 90px;
+    }
+    nav .container .main ul {
+        gap: 25px;
+    }
+    nav .container .main .menu_button div a {
+        font-size: 13px;
+        padding: 12px 19px;
+    }
+    #banner .container .col-lg-7 .banner_txt h1 {
+        font-size: 30px;
+        width: 50%;
+    }
+    #banner .container .col-lg-5 .BN_items .bannerCouple {
+        width: 250px;
+        height: 400px;
+        bottom: -6%;
+        left: 68%;
+    }
+    #banner {
+        padding: 0;
+    }
+    #banner .container .col-lg-7 .banner_txt p {
+        width: 59%;
+    }
+    #banner .container .col-lg-7 .banner_txt .common_button {
+        padding: 25px 0px 0 0;
+    }
+    #banner .container .col-lg-7 .banner_signin p {
+        font-size: 18px;
+    }
+    #banner .container .col-lg-7 .banner_signin img {
+        margin-left: 45%;
+    }
+    #banner .container .col-lg-5 .BN_items .Ellipse2 {
+        visibility: hidden;
+        right: 13%;
+    }
+    #banner .container .col-lg-7 span {
+        visibility: hidden;
+    }
+    #banner .container .col-lg-5 .BN_items .Ellipse3 {
+        right: -4%;
+    }
+    #service .service_txt {
+        display: block;
+    }
+    #service .text_right p {
+        margin: 0;
+    }
+    #service .slik_prev_arrow {
+        position: absolute;
+        top: 813px;
+        left: 35%;
+        z-index: 1;
+    }
+    #service .slik_next_arrow {
+        position: absolute;
+        top: 811px;
+        left: 60%;
+    }
+    #testimonial .test_next {
+        bottom: 10%;
+        right: 43%;
+    }
+    #testimonial .test_prev {
+        bottom: 10%;
+        left: 43%;
+    }
+ }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #banner .container .col-lg-7 .banner_txt h1 {
+        font-size: 40px;
+    }
+    #banner .container .col-lg-5 .BN_items .bannerCouple {
+        left: 2%;
+        z-index: 1;
+    }
+ }
+/* =============== INDEX PAGE ENDED ============= */
+/* =============== FREE COLLECTION PAGE START ============= */
+@media (max-width: 575.98px) { }
+@media (min-width: 576px) and (max-width: 767.98px) { }
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+/* =============== FREE COLLECTION PAGE ENDED ============= */

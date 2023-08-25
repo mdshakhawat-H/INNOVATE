@@ -1,0 +1,46 @@
+@import '../mixins/freemix';
+#impact{
+    position: relative;
+    padding: 100px 0;
+    .impact_head{
+        h2{
+            @include head($clr: $primary_colors , $fs: 48px,);
+            text-align: center;
+        }
+        p{
+            @include descriptions($clr: $forth_colors , $fs: 24px, $fw: 500);
+            width: 65%;
+            text-align: center;
+            margin: 26px auto 0;
+        }
+    }
+    .impact_descript{
+        margin-top: 72px;
+        display: flex;
+        gap: 20px;
+        .descript_txt{
+            h3{
+                @include head($clr: $primary_colors , $fs: 30px,);
+            }
+            p{
+                @include descriptions($clr: $forth_colors , $fs: 24px, $fw: 500);
+            }
+        }
+    }
+    .impact_img{
+        margin-top: 70px;
+        position: relative;
+        .impactelement{
+            position: absolute;
+            top: 18%;
+            right: -12%;
+        }
+    }
+    .impactVector{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        z-index: -1;
+    }
+}

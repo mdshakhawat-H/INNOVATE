@@ -1,0 +1,59 @@
+@import '../mixins/mixins';
+#updates{
+    padding: 130px 0;
+    .update_head{
+        text-align: center;
+        h4{
+            @include forth_head;
+        }
+        h2{
+            @include heading;
+        }
+    }
+    .updated{
+        margin-top: 60px;
+        display: flex;
+        gap: 35px;
+        .updated_items{
+            width: 33.333%;
+            img{
+                width: 100%;
+            }
+            h4{
+                @include forth_head($clr: $primary_color ,$fs: 18px , $tt: capitalize );
+                padding: 20px 0 10px;
+                margin: 0;
+            }
+            p{
+                @include description ($clr: $primary_color , $sf: 13px , $lh: 32px );
+            }
+            .pro_date{
+                display: flex;
+                justify-content: space-between;
+                .prof{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                        a{
+                            @include description ($clr: #C4C4C4 , $sf: 12px , $lh: 32px );
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                }
+                .date{
+                    form{
+
+                        input{
+                            flex-direction: row-reverse;
+                            gap: 10px;
+                            color: #C4C4C4;
+                            border: none;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

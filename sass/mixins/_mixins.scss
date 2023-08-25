@@ -1,0 +1,21 @@
+@import '../variables/variables';
+@mixin heading ($clr: $primary_color , $fs: 48px){
+    font-family: $secondery_font;
+    font-weight: 600;
+    font-size: $fs;
+    color: $clr;
+}
+@mixin forth_head($clr: $brand_color ,$fs: 20px , $tt: uppercase ){
+    font-family: $secondery_font;
+    font-weight: 600;
+    font-size: $fs;
+    color: $clr;
+    text-transform: $tt;
+}
+@mixin description ($clr: $primary_color , $sf: 17px , $lh: 32px ){
+    font-family: $primary_font;
+    font-weight: 400;
+    font-size: $sf;
+    color: $clr;
+    line-height: $lh;
+}

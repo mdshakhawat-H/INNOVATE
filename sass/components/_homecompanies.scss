@@ -1,0 +1,57 @@
+@import '../mixins/mixins';
+#companies{
+    padding: 110px 0;
+    background-color: #52c5b6 ;
+    position: relative;
+    .comElement1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .comElement2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+    .compani_head{
+        h2{
+            @include heading ($clr: $secondery_color , $fs: 38px);
+        }
+        .conpani_btn{
+            margin-top: 50px;
+            a{
+                @include description  ($clr: $secondery_color , $sf: 17px , $lh: 32px );
+                padding: 15px 30px;
+                background-color: $brand_color;
+                border-radius: 10px;
+                transition: .4s;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+    }
+    .compani_items{
+        .compani_counter{
+            display: flex;
+            justify-content: space-around;
+            .com_counter_items{
+                h3{
+                    @include heading ($clr: $secondery_color , $fs: 60px);
+                }
+                p{
+                    @include description($clr: $secondery_color , $sf: 20px , $lh: 30px );
+                }
+            }
+        }
+    }
+    .compani_logo{
+        display: flex;
+        .com_logo_items{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
